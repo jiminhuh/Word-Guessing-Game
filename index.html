@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Word Guess Game | Jimin Huh</title>
+</head>
+<body>
+    <div class="game">
+        <!-- Logo -->
+        <img src="assets/images/logo.png" alt="logo" id="logo">
+        <!-- Choice Box-->
+        <div id="choice-box">
+            <h2>Your Choices: <span id="my-choices"></span></h2>
+            <div id="blank-spaces"></div>
+        </div>
+        <!--Hint Area-->
+        <h3 id="hint">Hint: </h3>
+        <!-- HangMan Visual-->
+        <div id="hangman">
+            <canvas id="hangmanCanvas" width="500px" height="400px">
+
+            </canvas>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>Jimin Huh Copyright &copy;2018</p>
+        </footer>
+
+    </div>
+    
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
