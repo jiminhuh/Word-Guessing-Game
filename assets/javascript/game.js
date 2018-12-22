@@ -8,6 +8,8 @@ var errorCount = document.getElementById("tries");
 var winCounter = document.getElementById("correct");
 var next = document.getElementById("next");
 
+function game () {
+
 var words = ['bright', 'solar', 'light', 'sun', 'planet', 'asteroid', 'world'];
 var answerArray = [];
 var rightArray = [];
@@ -45,7 +47,6 @@ document.onkeyup = function (event) {
     answerArray[randomWord.indexOf(keyWord)] = keyWord;
     if (randomWord.indexOf(keyWord) !== -1) {
         rightArray.push(keyWord);
-        console.log(rightArray);
         wordDisplay.innerHTML = answerArray.join(" ");
         // See if all the underscores have been replaced
         if (answerArray.join("") == randomWord) {
@@ -68,18 +69,22 @@ document.onkeyup = function (event) {
     }
 }
 
+}
+
+// Run game function
+game();
 
 // onclick button will activate next function
-
 next.addEventListener("click", function () {
-    randomWord = words[Math.floor(Math.random() * words.length)];
-    
+    game();
     guessedLetters.innerHTML = [];
     errorCount.innerHTML = 9;
 });
 
+// Adding Visuals and effects
+
  
-console.log(answerArray);
+
 
 
 
