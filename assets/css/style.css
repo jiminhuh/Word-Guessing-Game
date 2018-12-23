@@ -54,7 +54,7 @@ body {
 }
 
 /* Button */
-#next {
+#reset {
     width: 60%;
     padding: 15px;
     margin: 0 auto;
@@ -74,7 +74,7 @@ body {
 
 /* Hangman Visual */
 
-#hangman {
+#visuals {
     background-color: #58cee3;
     width: 60%;
     height: 500px;
